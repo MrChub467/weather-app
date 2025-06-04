@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: rgba(209, 242, 255, 0.377);
+  text-align: center;
+  padding: 1rem;
+}
