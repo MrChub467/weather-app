@@ -49,6 +49,7 @@ footer {
   border: solid 1px skyblue;
   border-radius: 10px;
   padding: 1rem;
+  margin-bottom: 2rem;
 
   & label {
     font-size: 1.75rem;
@@ -75,8 +76,32 @@ footer {
   }
 }
 
+.headings {
+  border-bottom: 1px solid skyblue;
+  margin-bottom: 0.5rem;
+  font-size: x-small;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
 .weather-info {
-  display: grid;
+  display: none;
+  grid-template-columns: 1fr;
+  overflow-y: scroll;
+  height: 250px;
+  margin: 0 10vw;
+  position: relative;
+
+  & div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  & div:not(:first-child) {
+    margin-bottom: 0.25rem;
+    border-bottom: 1px solid rgba(209, 242, 255, 0.61);
+  }
 }
 
 .cloud-wrapper {
