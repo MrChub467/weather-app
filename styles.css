@@ -61,6 +61,22 @@ footer {
     font-size: 1.25rem;
     border-radius: 10px;
   }
+
+  & button {
+    border: inherit;
+    border-radius: inherit;
+    padding: 0.25rem;
+    background: rgba(209, 242, 255, 0.377);
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(209, 242, 255);
+    }
+  }
+}
+
+.weather-info {
+  display: grid;
 }
 
 .cloud-wrapper {
