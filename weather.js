@@ -20,8 +20,7 @@
         mode: "cors",
       });
       const json = await response.json();
-      console.log(json);
-      displayWeatherData(json);
+      displayWeatherData(json.days);
     } catch (error) {
       console.log(error);
     }
@@ -48,7 +47,7 @@
     });
     weatherScreen.appendChild(headerDiv);
 
-    data.days.forEach((day) => {
+    data.forEach((day) => {
       const parent = document.createElement("div");
 
       dataValues.forEach((key) => {
